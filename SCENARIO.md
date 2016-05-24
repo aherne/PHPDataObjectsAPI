@@ -26,7 +26,9 @@ Conclusion: users must write their own implementations of CRUD operations, as lo
 Correct solution:
 
 class UsersTable extends GenericMySQLTable {
+
 	...
+	
 	public function getName($id) {
 		// querying api
 		$table = new SQLTableSelect("users");
